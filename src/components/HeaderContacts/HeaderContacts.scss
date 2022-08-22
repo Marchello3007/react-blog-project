@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+
+.header-white-container {
+    // background-color: blue;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.header-white {
+    height: 75px;
+    display: grid;
+    grid-template-columns: 25% 18% 18% 18% 21%;
+    // background-color: aqua;
+}
+
+.header-logo {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 55% 20% 25%;
+    p {
+        color: #79787F;
+    font-family: "Roboto", Sans-serif;
+    font-size: 12px;
+    line-height: 1em;
+    margin-left: 8px;
+    padding-bottom: 3px;
+    }
+    
+}
+.header-time {
+    color: #1E1D24;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    // background-color: gold;
+    img {
+        width: 35px;
+    }
+}
+
+.header-address {
+    color: #1E1D24;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    // background-color: gold;
+    img {
+        width: 35px;
+    }
+}
+
+.header-tel {
+    color: #1E1D24;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    // background-color: gold;
+    img {
+        width: 35px;
+    }
+}
+
+.header-tel-text :nth-child(2)
+    {
+        font-size: 18px;
+    }
+
+
+.header-btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-btn {
+    width: 239px;
+    height: 42px;
+    display: grid;
+    text-align: center;
+    line-height: 40px;
+
+    a{
+        text-decoration: none;
+        background-color: #fc5a0a;
+        color: white;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 13px;
+        transition: all 0.4s;
+        
+        &:hover {background-color: #1e1d24;}
+    }
+}
+
+
+
+
+

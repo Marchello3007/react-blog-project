@@ -4,28 +4,11 @@ import Header from 'container/Header/Header'
 
 type Props = {}
 
-const Applist333 = () => {
-    return <p>Пробный текст</p>
-}
-
-const Applist555 = () => {
-    return (
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos non,
-            culpa modi voluptatem fugiat maiores totam odit, quam sint adipisci
-            tempore esse, officia minima suscipit minus quae! Omnis, odit
-            laudantium?
-        </p>
-    )
-}
-
 const App = (props: Props) => {
     return (
         <>
             <CssBaseline />
             <Header />
-            <Applist333 />
-            <Applist555 />
         </>
     )
 }
