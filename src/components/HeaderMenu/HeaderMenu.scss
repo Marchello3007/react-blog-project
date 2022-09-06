@@ -7,32 +7,59 @@
 
 
 .header-orange-container {
-    background-color: red;
+    background-color: #fc5a0a;
     padding-left: 80px;
     padding-right: 80px;
+
 }
 
 .header-orange {
     display: grid;
     grid-template-columns: 85% 15%;
-    background-color: #fc5a0a; 
+    background-color: #fc5a0a;
+    // height: 50px; 
     
 }
 
 .header-main-menu {
-    background-color: rgb(0, 128, 122);
+    background-color: #fc5a0a;
     display: flex;
+    height: 80px;
+    align-items: center;
+
     li{
         list-style: none;
     }
     a{
         text-decoration: none;
         color: white;
+        background-color: #fc5a0a;
+        padding: 15px;
+        margin: 5px;
     }
 
 }
 
 .header-search {
-    background-color: blue;
-
+    background-color: #fc5a0a;
 }
+
+.sub-menu-li {
+    background-color: aqua;
+    width: 250px;
+    display: none;
+}
+
+.header-main-menu li a:hover {
+    background-color: white;
+    color: 
+    #fc5a0a;
+}
+
+
+
+
+.activeMenuItem {
+    color: black;
+}
+

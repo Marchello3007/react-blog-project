@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './HeaderMenu.scss'
 
 type Props = {}
@@ -10,46 +11,95 @@ const HeaderMenu = (props: Props) => {
                 <div className="header-orange">
                     <ul className="header-main-menu">
                         <li>
-                            <a href="">Home</a>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                Home
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="">About</a>
+                            <NavLink
+                                to="about"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                About
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="">Services</a>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <NavLink
+                                to="services"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                Services
+                            </NavLink>
+                            <ul className="sub-menu-li">
+                                <li>Hoppers</li>
+                                <li>Industrial Ductwork</li>
+                                <li>Fan Housing</li>
+                                <li>Structural Steel Buildings</li>
+                                <li>Platforms, Stairways</li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">Projects</a>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <NavLink
+                                to="projects"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                Projects
+                            </NavLink>
+                            <ul className="sub-menu-li">
+                                <li>Heather Ln, Glasgow</li>
+                                <li>Central Str, New York</li>
+                                <li>Main Avn, London</li>
+                                <li>Hauptstrasse, Berlin</li>
+                                <li>Green Str, Boston</li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">Team</a>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                            <NavLink
+                                to="team"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                Team
+                            </NavLink>
+                            <ul className="sub-menu-li">
+                                <li>Jim Harris</li>
+                                <li>Tom Allen</li>
+                                <li>Jeremy Scott</li>
+                                <li>Bred Cooper</li>
+                                <li>Jake Bill</li>
                             </ul>
                         </li>
                         <li>
-                            <a href="">Blog</a>
+                            <NavLink
+                                to="blog"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                Blog
+                            </NavLink>
                         </li>
                         <li>
-                            <a href="">Contacts</a>
+                            <NavLink
+                                to="contacts"
+                                className={({ isActive }) =>
+                                    isActive ? 'activeMenuItem' : undefined
+                                }
+                            >
+                                Contacts
+                            </NavLink>
                         </li>
                     </ul>
                     <div className="header-search"></div>
